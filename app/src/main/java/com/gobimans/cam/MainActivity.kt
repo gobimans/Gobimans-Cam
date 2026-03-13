@@ -1,4 +1,5 @@
 package com.gobimans.cam
+// Fixed crashing issue
 
 import android.os.Bundle
 import android.widget.LinearLayout
