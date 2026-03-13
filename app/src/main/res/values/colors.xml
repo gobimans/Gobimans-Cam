@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="gobimans_black">#000000</color>
+    <color name="gobimans_white">#FFFFFF</color>
+    <color name="gobimans_red">#E50914</color>
+</resources>
