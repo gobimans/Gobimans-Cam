@@ -1,33 +1,24 @@
 package com.gobimans.cam
 
 import android.os.Bundle
-import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
-import androidx.compose.ui.Alignment
-import androidx.compose.ui.Modifier
+import android.widget.LinearLayout
+import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+import android.graphics.Color
 
-class MainActivity : ComponentActivity() {
+class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContent {
-            MaterialTheme {
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
-                    Box(
-                        modifier = Modifier.fillMaxSize(),
-                        contentAlignment = Alignment.Center
-                    ) {
-                        Text("Welcome to Gobimans Camera")
-                    }
-                }
-            }
-        }
+        
+        val layout = LinearLayout(this)
+        layout.setBackgroundColor(Color.WHITE)
+        
+        val textView = TextView(this)
+        textView.text = "Gobimans Camera App"
+        textView.textSize = 20f
+        textView.setTextColor(Color.BLACK)
+        
+        layout.addView(textView)
+        setContentView(layout)
     }
 }
