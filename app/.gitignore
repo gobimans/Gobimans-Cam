@@ -1,0 +1,35 @@
+# Gradle
+.gradle/
+build/
+
+# Local configuration
+local.properties
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Android Studio
+*.apk
+*.ap_
+*.dex
+*.class
+*.jar
+*.aar
+
+# Kotlin
+kotlin-result/
+*.kotlin_module
+
+# Generated files
+bin/
+gen/
+out/
+
+# OS-specific
+.DS_Store
+Thumbs.db
